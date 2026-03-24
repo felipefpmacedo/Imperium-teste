@@ -832,7 +832,7 @@ ul { list-style: none; }
 
 /* ============ PÁGINAS DE SOLUÇÃO ============ */
 .sol-page-hero {
-  padding: 120px 0 0;
+  padding: 180px 0 100px;
   background: linear-gradient(135deg, #0f172a 0%, #1a2744 100%);
   position: relative;
   overflow: hidden;
@@ -840,44 +840,15 @@ ul { list-style: none; }
 .sol-page-hero::before {
   content: '';
   position: absolute;
-  top: -100px; left: -80px;
+  top: -100px; right: -100px;
   width: 500px; height: 500px;
-  background: radial-gradient(circle, rgba(255,105,0,0.08) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(255,105,0,0.10) 0%, transparent 65%);
   pointer-events: none;
 }
-
-.sol-hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: end;
-  position: relative;
-  z-index: 1;
-}
-
-.sol-hero-content {
-  padding: 60px 0 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.sol-hero-img-wrap {
-  position: relative;
-  align-self: end;
-}
-.sol-hero-img-wrap img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  display: block;
-  border-radius: 16px 16px 0 0;
-  box-shadow: 0 -8px 40px rgba(0,0,0,0.3);
-}
-
+.sol-page-hero .container { position: relative; z-index: 1; }
 .sol-page-hero h1 {
   font-family: 'Raleway', -apple-system, sans-serif;
-  font-size: clamp(32px, 4.5vw, 58px);
+  font-size: clamp(36px, 5vw, 64px);
   font-weight: 900;
   color: #fff;
   line-height: 1.1;
@@ -886,38 +857,19 @@ ul { list-style: none; }
 }
 .sol-page-hero .hero-sub {
   font-family: 'Open Sans', -apple-system, sans-serif;
-  font-size: 16px;
-  color: rgba(255,255,255,0.7);
-  line-height: 1.7;
+  color: rgba(255,255,255,0.75);
   margin-bottom: 32px;
-  max-width: 480px;
 }
-.sol-page-hero .sol-tag { margin-bottom: 20px; }
-
-.sol-hero-stats {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-top: 40px;
-  padding-top: 32px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  flex-wrap: wrap;
-}
-.sol-hero-stat { display: flex; flex-direction: column; gap: 3px; }
-.sol-hero-stat-num   { font-family: 'Raleway', sans-serif; font-size: 26px; font-weight: 900; color: var(--orange); }
-.sol-hero-stat-label { font-family: 'Open Sans', sans-serif; font-size: 11px; color: rgba(255,255,255,0.5); text-transform: uppercase; letter-spacing: 0.5px; }
-.sol-hero-stat-div   { width: 1px; height: 36px; background: rgba(255,255,255,0.12); }
+.sol-page-hero .sol-tag  { margin-bottom: 16px; }
 
 .back-link {
-  display: inline-flex;
-  align-items: center;
+  display: inline-block;
   font-family: 'Open Sans', -apple-system, sans-serif;
-  color: rgba(255,255,255,0.45);
-  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  font-size: 13px;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   transition: color 0.2s;
-  gap: 6px;
 }
 .back-link:hover { color: var(--orange); }
 
@@ -1031,16 +983,10 @@ ul { list-style: none; }
 /* seção de módulos com fundo bg2 precisa de section-header centralizado */
 .sol-page-section .section-header { margin-bottom: 0; }
 
-@media (max-width: 900px) {
-  .sol-hero-grid { grid-template-columns: 1fr; }
-  .sol-hero-img-wrap { display: none; }
-  .sol-hero-content  { padding: 40px 0 60px; }
-}
-
 @media (max-width: 768px) {
   .sol-page-grid    { grid-template-columns: 1fr; gap: 32px; }
   .sol-modules-grid { grid-template-columns: 1fr; }
   .sol-dif-list     { grid-template-columns: 1fr; }
   .sol-page-hero h1 { letter-spacing: -1px; }
-  .sol-page-hero    { padding: 100px 0 0; }
+  .sol-page-hero    { padding: 160px 0 80px; }
 }
