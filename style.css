@@ -792,7 +792,7 @@ ul { list-style: none; }
   font-size: 12px;
   color: rgba(255,255,255,0.3);
 }
-.footer .logo-img { height: 36px; width: auto; padding: 4px 10px; border-radius: 6px; }
+.footer .logo-img { height: 56px; width: auto; padding: 4px 0; border-radius: 6px; }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1024px) {
