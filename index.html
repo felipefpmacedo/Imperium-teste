@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imperium Sistemas — Soluções em Logística</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <img src="https://imperiumsistemas.com.br/wp-content/uploads/2020/06/logo_grande.jpeg" alt="Imperium Sistemas" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#solucoes">Soluções</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="#clientes">Clientes</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+5531993070773" class="btn btn-ghost">(31) 99307-0773</a>
+        <a href="#contato" class="btn btn-primary">Fale Conosco</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#solucoes">Soluções</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#cases">Cases</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-logo-wrap">
+        <img src="https://imperiumsistemas.com.br/wp-content/uploads/2020/06/logo_grande.jpeg" alt="Imperium Sistemas" class="hero-logo" />
+      </div>
+      <div class="hero-badge">Software especializado em logística</div>
+      <h1 class="hero-title">
+        Sua logística,<br />
+        <span class="text-green">inteligente</span> e eficiente.
+      </h1>
+      <p class="hero-sub">
+        Desenvolvemos e comercializamos soluções tecnológicas para operações logísticas.
+        WMS, Gestão de Frota e Roteirização em um só lugar.
+      </p>
+      <div class="hero-cta">
+        <a href="#contato" class="btn btn-primary btn-lg">Solicitar Demonstração</a>
+        <a href="#solucoes" class="btn btn-ghost btn-lg">Ver Soluções →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">20+</span>
+          <span class="stat-label">Clientes ativos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">99%</span>
+          <span class="stat-label">Uptime garantido</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Anos de experiência</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="dashboard-mock">
+        <div class="mock-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="mock-title" id="mockTitle">WMS — Dashboard</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-sidebar">
+            <div class="mock-item active" onclick="switchTab(this,'dashboard')">Dashboard</div>
+            <div class="mock-item" onclick="switchTab(this,'recebimento')">Recebimento</div>
+            <div class="mock-item" onclick="switchTab(this,'armazenagem')">Armazenagem</div>
+            <div class="mock-item" onclick="switchTab(this,'expedicao')">Expedição</div>
+            <div class="mock-item" onclick="switchTab(this,'inventario')">Inventário</div>
+            <div class="mock-item" onclick="switchTab(this,'relatorios')">Relatórios</div>
+          </div>
+          <div class="mock-content" id="mockContent">
+            <!-- Dashboard (padrão) -->
+            <div class="mock-cards">
+              <div class="mock-card">
+                <span class="mock-card-label">Pedidos hoje</span>
+                <span class="mock-card-val accent">1.248</span>
+              </div>
+              <div class="mock-card">
+                <span class="mock-card-label">Acuracidade</span>
+                <span class="mock-card-val">99.7%</span>
+              </div>
+              <div class="mock-card">
+                <span class="mock-card-label">Posições livres</span>
+                <span class="mock-card-val">3.402</span>
+              </div>
+            </div>
+            <div class="mock-chart">
+              <div class="chart-bar" style="height:40%"></div>
+              <div class="chart-bar" style="height:65%"></div>
+              <div class="chart-bar" style="height:50%"></div>
+              <div class="chart-bar" style="height:80%"></div>
+              <div class="chart-bar" style="height:55%"></div>
+              <div class="chart-bar" style="height:90%"></div>
+              <div class="chart-bar" style="height:70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION LABEL -->
+  <div class="section-label container">
+    <span>Nossas Soluções</span>
+    <div class="section-line"></div>
+  </div>
+
+  <!-- SOLUCOES -->
+  <section class="solucoes" id="solucoes">
+    <div class="container">
+      <div class="section-header">
+        <h2>Comece a operar.<br /><span class="text-green">Escale sem limites.</span></h2>
+        <p>Do recebimento à expedição — temos a solução certa para cada etapa da sua operação logística.</p>
+      </div>
+
+      <div class="solutions-grid">
+
+        <!-- WMS — card destaque com imagem lateral -->
+        <div class="solution-card featured">
+          <div class="sol-body">
+            <div class="sol-tag">Solução Principal</div>
+            <h3>WMS — Warehouse Management</h3>
+            <p class="sol-desc">Sistema completo para controlar todas as atividades do seu armazém com precisão e velocidade — do recebimento à expedição.</p>
+            <ul class="sol-list">
+              <li>✓ Controle de entrada e saída via coletor</li>
+              <li>✓ Rastreabilidade individual e por equipe</li>
+              <li>✓ Inventário geral e rotativo em tempo real</li>
+              <li>✓ Picking fixo, dinâmico e cross-docking</li>
+              <li>✓ Integração flexível com ERPs</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary">Saiba mais →</a>
+          </div>
+          <div class="sol-img-wrap">
+            <img src="https://imperiumsistemas.com.br/wp-content/uploads/2021/01/shutterstock_252243379.jpg" alt="WMS — Gestão de Armazém" />
+          </div>
+        </div>
+
+        <!-- Gestão de Frota -->
+        <div class="solution-card">
+          <div class="sol-img-top">
+            <img src="https://imperiumsistemas.com.br/wp-content/uploads/2021/01/shutterstock_1767307106.jpg" alt="Gestão de Frota" />
+            <div class="sol-img-overlay"></div>
+          </div>
+          <div class="sol-card-body">
+            <h3>Gestão de Frota</h3>
+            <p class="sol-desc">Gerencie todas as viagens e custos da sua frota com metodologia proprietária.</p>
+            <ul class="sol-list">
+              <li>✓ Controle de viagens e KM</li>
+              <li>✓ Custeio fixo e variável</li>
+              <li>✓ Autorização de manutenção</li>
+              <li>✓ Monitoramento de consumo</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline">Saiba mais →</a>
+          </div>
+        </div>
+
+        <!-- Roteirizador -->
+        <div class="solution-card">
+          <div class="sol-img-top">
+            <img src="imagem-caminhão em mapa.png" alt="Roteirizador" />
+            <div class="sol-img-overlay"></div>
+          </div>
+          <div class="sol-card-body">
+            <h3>Roteirizador</h3>
+            <p class="sol-desc">Otimize as rotas de entrega reduzindo custos e aumentando a produtividade da sua frota.</p>
+            <ul class="sol-list">
+              <li>✓ Roteirização automática</li>
+              <li>✓ Restrições por veículo</li>
+              <li>✓ Janelas de tempo</li>
+              <li>✓ Indicadores de performance</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline">Saiba mais →</a>
+          </div>
+        </div>
+
+        <!-- Consultoria -->
+        <div class="solution-card">
+          <div class="sol-img-top">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80" alt="Consultoria Logística" />
+            <div class="sol-img-overlay"></div>
+          </div>
+          <div class="sol-card-body">
+            <h3>Consultoria</h3>
+            <p class="sol-desc">Serviços completos de consultoria para otimizar seus processos logísticos do zero.</p>
+            <ul class="sol-list">
+              <li>✓ Diagnóstico operacional</li>
+              <li>✓ Implantação e treinamento</li>
+              <li>✓ Mapeamento de processos</li>
+              <li>✓ Suporte dedicado</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline">Saiba mais →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="beneficios" id="beneficios">
+    <div class="container">
+      <div class="section-label-inline">
+        <span class="text-green">↑ Resultados</span>
+      </div>
+      <h2 class="section-title-center">Itere rápido.<br /><span class="text-green">Acelere seus resultados.</span></h2>
+      <p class="section-sub-center">Da primeira implantação em diante, qualquer melhoria é possível. A Imperium te ajuda a entregar mais rápido eliminando gargalos operacionais.</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">📦</div>
+          <h4>Acuracidade de Estoque</h4>
+          <p>Elimine divergências de inventário com rastreabilidade em tempo real por código de barras e RFID.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">⚡</div>
+          <h4>Produtividade Operacional</h4>
+          <p>Aumente a velocidade das operações de separação, conferência e expedição com processos otimizados.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🔗</div>
+          <h4>Integração com ERP</h4>
+          <p>Conecte-se ao seu ERP atual com modelos de integração flexíveis — sem retrabalho de dados.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">📊</div>
+          <h4>Indicadores em Tempo Real</h4>
+          <p>Monitore produtividade individual e por equipe, custos e SLAs direto do painel de controle.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🛡️</div>
+          <h4>99%+ de Uptime</h4>
+          <p>Infraestrutura robusta com alta disponibilidade e garantia de continuidade para sua operação.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🎧</div>
+          <h4>Suporte Especializado</h4>
+          <p>Equipe dedicada pronta para resolver qualquer dúvida, exatamente quando você precisar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDEAL PARA -->
+  <section class="ideal">
+    <div class="container">
+      <p class="ideal-label">Ideal para qualquer tipo de operação. Como por exemplo...</p>
+      <div class="ideal-grid">
+        <div class="ideal-card">
+          <span class="ideal-icon">🏪</span>
+          <span>Varejo</span>
+          <small>Lojas e redes</small>
+        </div>
+        <div class="ideal-card">
+          <span class="ideal-icon">🏢</span>
+          <span>Distribuição</span>
+          <small>Centros distribuidores</small>
+        </div>
+        <div class="ideal-card">
+          <span class="ideal-icon">🏭</span>
+          <span>Indústria</span>
+          <small>Manufatura e produção</small>
+        </div>
+        <div class="ideal-card">
+          <span class="ideal-icon">🚚</span>
+          <span>Transportes</span>
+          <small>Frotas e TMS</small>
+        </div>
+        <div class="ideal-card">
+          <span class="ideal-icon">❄️</span>
+          <span>Frio</span>
+          <small>Câmaras frias</small>
+        </div>
+        <div class="ideal-card">
+          <span class="ideal-icon">💊</span>
+          <span>Farmacêutico</span>
+          <small>Rastreabilidade FEFO</small>
+        </div>
+        <div class="ideal-card">
+          <span class="ideal-icon">🛒</span>
+          <span>E-commerce</span>
+          <small>Fulfillment centers</small>
+        </div>
+        <div class="ideal-card more">
+          <span>e muito mais...</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais">
+    <div class="container">
+      <div class="dif-grid">
+        <div class="dif-left">
+          <span class="text-green small-label">Interface Amigável</span>
+          <h3>Operação simples.<br />Resultados poderosos.</h3>
+          <p>Controle toda a operação na ponta dos dedos. Acesse qualquer módulo, crie relatórios, gerencie usuários e muito mais.</p>
+          <div class="dif-terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span>Expedição — Conferência</span>
+            </div>
+            <div class="terminal-body">
+              <div class="t-line"><span class="t-green">✓</span> Pedido #10482 — DM Brasil</div>
+              <div class="t-line"><span class="t-green">✓</span> 48 volumes conferidos</div>
+              <div class="t-line"><span class="t-green">✓</span> NF-e 000.000.132 emitida</div>
+              <div class="t-line"><span class="t-yellow">⟳</span> Aguardando transportadora...</div>
+            </div>
+          </div>
+        </div>
+        <div class="dif-right">
+          <span class="text-green small-label">Gestão de Parâmetros</span>
+          <h3>Configure uma vez.<br />Rode para sempre.</h3>
+          <p>Defina regras de armazenagem, cotas de picking, restrições de produto e parâmetros de custo sem precisar de TI.</p>
+          <div class="dif-pricing">
+            <div class="pricing-row">
+              <span>Posições ativas</span>
+              <span class="text-green">12.400</span>
+            </div>
+            <div class="pricing-row">
+              <span>Giro médio diário</span>
+              <span>R$ 420.000</span>
+            </div>
+            <div class="pricing-row">
+              <span>Custo por pedido</span>
+              <span class="text-green">R$ 0,34</span>
+            </div>
+            <div class="pricing-row">
+              <span>Acuracidade</span>
+              <span class="text-green">99,7%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTES -->
+  <section class="clientes" id="clientes">
+    <div class="container">
+      <div class="section-label-inline">
+        <span class="text-green">Clientes que confiam na Imperium</span>
+      </div>
+      <div class="clients-logos">
+        <div class="client-logo">Fortlev</div>
+        <div class="client-logo">Piove TSS</div>
+        <div class="client-logo">Imóveis Simonetti</div>
+        <div class="client-logo">Móveis Linhares</div>
+        <div class="client-logo">Central Compras</div>
+        <div class="client-logo">CIM Emprimo</div>
+        <div class="client-logo">Comercial Biriba</div>
+        <div class="client-logo">Coqueiros</div>
+        <div class="client-logo">DM Brasil</div>
+        <div class="client-logo">Elsons</div>
+        <div class="client-logo">Hidra Máquinas</div>
+        <div class="client-logo">Baiana</div>
+        <div class="client-logo">Campo Bom</div>
+        <div class="client-logo">Macro Lub</div>
+        <div class="client-logo">Alinutri</div>
+        <div class="client-logo">Lojas Edmil</div>
+        <div class="client-logo">Casa Bem</div>
+        <div class="client-logo">Avets</div>
+        <div class="client-logo">MBled</div>
+        <div class="client-logo">Lojas Dular</div>
+        <div class="client-logo">Bestfer</div>
+        <div class="client-logo">Varejão das Tintas</div>
+        <div class="client-logo">Rio Master</div>
+        <div class="client-logo">Tintas Lux</div>
+        <div class="client-logo">Sono Show</div>
+        <div class="client-logo">Supermais</div>
+        <div class="client-logo">Motoarte</div>
+        <div class="client-logo">Premium</div>
+        <div class="client-logo">Segurança</div>
+        <div class="client-logo">Rover Distribuidora</div>
+        <div class="client-logo">Planeta Distribuidor</div>
+        <div class="client-logo">Laurencini</div>
+        <div class="client-logo">Gulozitos</div>
+        <div class="client-logo">Ark</div>
+        <div class="client-logo">Guido</div>
+        <div class="client-logo">Imporiente</div>
+        <div class="client-logo">Época</div>
+        <div class="client-logo">Mirmar</div>
+        <div class="client-logo">Amorix</div>
+        <div class="client-logo">Boi Bom</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos" id="cases">
+    <div class="container">
+      <h2 class="section-title-center">O que nossos clientes<br /><span class="text-green">dizem sobre nós</span></h2>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <div class="testi-header">
+            <div class="testi-avatar">JM</div>
+            <div>
+              <div class="testi-name">João Marcelo</div>
+              <div class="testi-role">Gerente de Operações — DM Brasil</div>
+            </div>
+          </div>
+          <p>"Implementamos o WMS da Imperium e em 3 meses nossa acuracidade de estoque passou de 94% para 99,7%. A operação nunca foi tão fluida."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-header">
+            <div class="testi-avatar">CA</div>
+            <div>
+              <div class="testi-name">Carla Andrade</div>
+              <div class="testi-role">Diretora Logística — Baianão</div>
+            </div>
+          </div>
+          <p>"O módulo de gestão de frota transformou o controle dos nossos custos. Hoje temos visibilidade total de cada centavo gasto por viagem."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-header">
+            <div class="testi-avatar">RL</div>
+            <div>
+              <div class="testi-name">Roberto Lima</div>
+              <div class="testi-role">CEO — Riomaster</div>
+            </div>
+          </div>
+          <p>"O suporte da Imperium é diferenciado. Não é só vender sistema — eles realmente entendem de logística e nos ajudam a melhorar processos."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-header">
+            <div class="testi-avatar">PS</div>
+            <div>
+              <div class="testi-name">Paulo Souza</div>
+              <div class="testi-role">TI — Lojas Edmil</div>
+            </div>
+          </div>
+          <p>"A integração com nosso ERP foi tranquila. A equipe técnica da Imperium entregou dentro do prazo e com zero impacto na operação."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-header">
+            <div class="testi-avatar">FM</div>
+            <div>
+              <div class="testi-name">Fernanda Melo</div>
+              <div class="testi-role">Supervisora de CD</div>
+            </div>
+          </div>
+          <p>"O sistema é intuitivo. Treinamos a equipe em menos de uma semana. Hoje não consigo imaginar a operação sem o WMS da Imperium."</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-header">
+            <div class="testi-avatar">TC</div>
+            <div>
+              <div class="testi-name">Thiago Costa</div>
+              <div class="testi-role">Analista Logístico</div>
+            </div>
+          </div>
+          <p>"O roteirizador nos economizou em média 18% em combustível no primeiro mês. O ROI foi muito mais rápido do que esperávamos."</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Pronto para transformar<br />sua operação logística?</h2>
+        <p>Agende uma demonstração gratuita e veja como a Imperium pode impactar seus resultados.</p>
+        <a href="#contato" class="btn btn-primary btn-lg">Agendar Demonstração Gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-info">
+          <h2>Entre em contato.</h2>
+          <p>Nossa equipe está pronta para entender sua operação e apresentar a solução ideal.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.83a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              <div>
+                <div class="contact-label">Telefone / WhatsApp</div>
+                <a href="tel:+5531993070773">(31) 99307-0773</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <div>
+                <div class="contact-label">E-mail</div>
+                <a href="mailto:comercial@imperiumsistemas.com.br">comercial@imperiumsistemas.com.br</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <div class="contact-label">Localização</div>
+                <span>Minas Gerais, Brasil</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contato-form" onsubmit="handleForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Nome</label>
+              <input type="text" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label>Empresa</label>
+              <input type="text" placeholder="Nome da empresa" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Telefone</label>
+            <input type="tel" placeholder="(00) 00000-0000" />
+          </div>
+          <div class="form-group">
+            <label>Solução de interesse</label>
+            <select>
+              <option value="">Selecione...</option>
+              <option>WMS — Warehouse Management System</option>
+              <option>Gestão de Frota</option>
+              <option>Roteirizador</option>
+              <option>Consultoria Logística</option>
+              <option>Não sei ainda</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Mensagem</label>
+            <textarea placeholder="Conte um pouco sobre sua operação..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem →</button>
+          <p class="form-note">Respondemos em até 24 horas úteis.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="https://imperiumsistemas.com.br/wp-content/uploads/2020/06/logo_grande.jpeg" alt="Imperium Sistemas" class="logo-img" />
+          </a>
+          <p>Soluções tecnológicas para operações logísticas de alta performance.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Soluções</h5>
+          <a href="#solucoes">WMS</a>
+          <a href="#solucoes">Gestão de Frota</a>
+          <a href="#solucoes">Roteirizador</a>
+          <a href="#solucoes">Consultoria</a>
+        </div>
+        <div class="footer-links">
+          <h5>Empresa</h5>
+          <a href="#">Quem Somos</a>
+          <a href="#cases">Cases</a>
+          <a href="#clientes">Clientes</a>
+          <a href="#">Blog</a>
+          <a href="#">Trabalhe Conosco</a>
+        </div>
+        <div class="footer-links">
+          <h5>Contato</h5>
+          <a href="tel:+5531993070773">(31) 99307-0773</a>
+          <a href="mailto:comercial@imperiumsistemas.com.br">comercial@imperiumsistemas.com.br</a>
+          <a href="#">Minas Gerais, Brasil</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Imperium Sistemas. Todos os direitos reservados.</span>
+        <span>imperiumsistemas.com.br</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
