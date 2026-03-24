@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roteirizador | Imperium Sistemas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="imperium-logo.jpeg" alt="Imperium Sistemas" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#solucoes">Soluções</a></li>
+        <li><a href="index.html#beneficios">Benefícios</a></li>
+        <li><a href="index.html#cases">Cases</a></li>
+        <li><a href="index.html#clientes">Clientes</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+5531993070773" class="btn btn-ghost">(31) 99307-0773</a>
+        <a href="index.html#contato" class="btn btn-primary">Fale Conosco</a>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#solucoes">Soluções</a>
+      <a href="index.html#beneficios">Benefícios</a>
+      <a href="index.html#cases">Cases</a>
+      <a href="index.html#clientes">Clientes</a>
+      <a href="index.html#contato">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HERO DA PÁGINA -->
+  <section class="sol-page-hero">
+    <div class="container">
+      <a href="index.html" class="back-link">← Voltar para o início</a>
+      <h1>Roteirizador<br /><span class="text-green">Inteligente</span></h1>
+      <p class="hero-sub">Otimize as rotas de entrega, reduza custos com combustível e aumente a produtividade da sua frota com roteirização automática.</p>
+      <a href="index.html#contato" class="btn btn-primary btn-lg">Solicitar Demonstração</a>
+    </div>
+  </section>
+
+  <!-- O QUE É -->
+  <section class="sol-page-section">
+    <div class="container sol-page-grid">
+      <div>
+        <h2>Rotas otimizadas,<br /><span class="text-green">custos reduzidos</span></h2>
+        <p>O Roteirizador da Imperium usa algoritmos avançados para calcular automaticamente as melhores rotas de entrega, considerando restrições de veículos, janelas de horário, capacidade de carga e características do endereço.</p>
+        <p>Nossos clientes economizam em média 18% em combustível já no primeiro mês de uso — e ganham visibilidade total sobre a eficiência das entregas.</p>
+      </div>
+      <div class="sol-page-img-wrap">
+        <img src="imagem-caminhão em mapa.png" alt="Roteirizador Imperium" />
+      </div>
+    </div>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section class="sol-page-section" style="background: var(--bg2);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Recursos do <span class="text-green">Roteirizador</span></h2>
+        <p>Tudo que você precisa para planejar e executar entregas com máxima eficiência.</p>
+      </div>
+      <div class="sol-modules-grid">
+        <div class="sol-module-card">
+          <div class="sol-module-icon">🗺️</div>
+          <h4>Roteirização Automática</h4>
+          <p>Gera automaticamente as melhores rotas para sua frota com base em endereços, pesos, volumes e restrições operacionais.</p>
+        </div>
+        <div class="sol-module-card">
+          <div class="sol-module-icon">🚛</div>
+          <h4>Restrições por Veículo</h4>
+          <p>Defina capacidade de carga, tipo de veículo, restrições de circulação e zonas de atendimento para cada unidade da frota.</p>
+        </div>
+        <div class="sol-module-card">
+          <div class="sol-module-icon">🕐</div>
+          <h4>Janelas de Tempo</h4>
+          <p>Respeite os horários de entrega combinados com os clientes, com alertas automáticos para atrasos e reagendamentos.</p>
+        </div>
+        <div class="sol-module-card">
+          <div class="sol-module-icon">📍</div>
+          <h4>Geocodificação de Endereços</h4>
+          <p>Conversão automática de endereços em coordenadas geográficas para garantir precisão no planejamento das rotas.</p>
+        </div>
+        <div class="sol-module-card">
+          <div class="sol-module-icon">📊</div>
+          <h4>Indicadores de Performance</h4>
+          <p>Acompanhe em tempo real o percentual de entregas realizadas, custo por entrega e desvios de rota por motorista.</p>
+        </div>
+        <div class="sol-module-card">
+          <div class="sol-module-icon">🔗</div>
+          <h4>Integração com WMS e Frota</h4>
+          <p>Use integrado ao WMS para roteirizar automaticamente os pedidos expedidos e ao módulo de frota para acompanhar custos reais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="sol-page-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Por que escolher o <span class="text-green">Roteirizador Imperium?</span></h2>
+      </div>
+      <div class="sol-dif-list">
+        <div class="sol-dif-item">
+          <span class="sol-dif-check">✓</span>
+          <div>
+            <strong>Economia comprovada</strong>
+            <p>Redução média de 18% em combustível e até 25% no número de viagens necessárias para atender os mesmos clientes.</p>
+          </div>
+        </div>
+        <div class="sol-dif-item">
+          <span class="sol-dif-check">✓</span>
+          <div>
+            <strong>Fácil de usar</strong>
+            <p>Interface intuitiva pensada para o operador logístico — sem necessidade de conhecimento técnico avançado.</p>
+          </div>
+        </div>
+        <div class="sol-dif-item">
+          <span class="sol-dif-check">✓</span>
+          <div>
+            <strong>Adaptável à sua realidade</strong>
+            <p>Configuramos o sistema conforme as particularidades da sua operação: tipo de produto, horários, regiões e restrições.</p>
+          </div>
+        </div>
+        <div class="sol-dif-item">
+          <span class="sol-dif-check">✓</span>
+          <div>
+            <strong>ROI rápido</strong>
+            <p>A maioria dos clientes recupera o investimento em menos de 3 meses, apenas com a redução no consumo de combustível.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Economize 18% em combustível<br />já no primeiro mês</h2>
+        <p>Agende uma demonstração e veja o roteirizador em ação com os seus dados.</p>
+        <a href="index.html#contato" class="btn btn-primary btn-lg">Agendar Demonstração Gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="imperium-logo.jpeg" alt="Imperium Sistemas" class="logo-img" />
+          </a>
+          <p>Soluções tecnológicas para operações logísticas de alta performance.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Soluções</h5>
+          <a href="wms.html">WMS</a>
+          <a href="frota.html">Gestão de Frota</a>
+          <a href="roteirizador.html">Roteirizador</a>
+          <a href="consultoria.html">Consultoria</a>
+        </div>
+        <div class="footer-links">
+          <h5>Empresa</h5>
+          <a href="index.html">Quem Somos</a>
+          <a href="index.html#cases">Cases</a>
+          <a href="index.html#clientes">Clientes</a>
+        </div>
+        <div class="footer-links">
+          <h5>Contato</h5>
+          <a href="tel:+5531993070773">(31) 99307-0773</a>
+          <a href="mailto:comercial@imperiumsistemas.com.br">comercial@imperiumsistemas.com.br</a>
+          <a href="#">Minas Gerais, Brasil</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Imperium Sistemas. Todos os direitos reservados.</span>
+        <span>imperiumsistemas.com.br</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
