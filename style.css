@@ -782,7 +782,7 @@ ul { list-style: none; }
 .footer-brand p { font-size: 13px; color: rgba(255,255,255,0.4); margin-top: 12px; line-height: 1.6; max-width: 240px; }
 .footer-links   { display: flex; flex-direction: column; gap: 10px; }
 .footer-links h5 { font-size: 12px; font-weight: 700; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
-.footer-links a  { font-size: 13px; color: rgba(255,255,255,0.4); transition: color 0.2s; }
+.footer-links a, .footer-links span { font-size: 13px; color: rgba(255,255,255,0.4); transition: color 0.2s; }
 .footer-links a:hover { color: #fff; }
 .footer-bottom {
   display: flex;
